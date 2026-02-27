@@ -34,7 +34,7 @@ cd frappe_test_project
 
 2. Убедиться, что ERPNext уже развернут и доступен (по умолчанию `http://localhost:8080`).
 
-3. Один раз включить Server Script в окружении ERPNext.
+3. Один раз включить Server Script в окружении ERPNext.  
    Команды ниже выполняются в директории `frappe_docker` (там, где лежит `pwd.yml`):
 
 ```bash
