@@ -25,23 +25,24 @@
 
 ## Как запустить
 
-1. Склонировать репозиторий:
+1. Склонировать репозиторий со скриптами:
 
 ```bash
 git clone https://github.com/russsik1/frappe_test_project.git
 cd frappe_test_project
 ```
 
-2. Убедиться, что ERPNext запущен и доступен (по умолчанию `http://localhost:8080`).
+2. Убедиться, что ERPNext уже развернут и доступен (по умолчанию `http://localhost:8080`).
 
-3. Один раз включить Server Script в окружении ERPNext:
+3. Один раз включить Server Script в окружении ERPNext.
+   Команды ниже выполняются в директории `frappe_docker` (там, где лежит `pwd.yml`):
 
 ```bash
 docker compose -f pwd.yml exec backend bench --site frontend set-config server_script_enabled true
 docker compose -f pwd.yml exec backend bench set-config -g server_script_enabled 1
 ```
 
-4. Загрузить скрипты в ERPNext.
+4. Из директории этого репозитория загрузить скрипты в ERPNext:
 
 PowerShell:
 
